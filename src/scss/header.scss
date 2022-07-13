@@ -1,0 +1,68 @@
+header {
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.navbar {
+    padding-bottom: 1rem;
+}
+
+.navbar__buttons {
+    padding-top: 7px;
+}
+
+.navbar__logo {
+    padding-top: 3px;
+}
+
+
+.navbar__btn {
+    border: 1px solid;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    width: 80px;
+    height: 40px;
+}
+
+.navbar__btn:hover {
+    background-color: #57AD56;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.navbar__btn--sign {
+    border-color: #E0E0E0;
+    margin-right: 12px;
+}
+
+.navbar__btn--register {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar__logo {
+        padding-top: 7px;
+    }
+
+    .navbar__buttons {
+        padding-top: 8px;
+
+    }
+
+    .navbar__logo img {
+        width: 88%;
+    }
+
+    .navbar__btn {
+        width: 72px;
+    }
+
+    .navbar__btn--sign {
+        margin-right: 3px;
+    }
+
+}

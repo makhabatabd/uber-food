@@ -1,0 +1,43 @@
+footer {
+    background-color: #262626;
+}
+
+.footer__inner {
+    padding: 66px 0 52px 0px;
+}
+
+.footer__image {
+    padding: 0px 0 24px 0px;
+}
+
+hr {
+    width: 95%;
+    background-color: white;
+    margin-bottom: 37px;
+}
+
+.footer__image img {
+    width: 20%;
+}
+
+.footer__copyright {
+    display: block;
+    color: white;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 780px) {
+    .footer__image img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer__image img {
+        width: 50%;
+    }
+
+    .footer__inner {
+        padding: 66px 0 52px 0px;
+    }
+}
