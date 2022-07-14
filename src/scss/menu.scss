@@ -51,7 +51,7 @@ select:focus {
 
 @media screen and (max-width: 768px) {
     .menu {
-        padding: 4px 0 42px 0;
+        padding: 16px 0 0px 0;
     }
 
     .menu__option {
@@ -81,5 +81,11 @@ select:focus {
     textarea,
     input {
         outline: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu {
+        padding: 114px 0 42px 0;
     }
 }

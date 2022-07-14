@@ -26,18 +26,31 @@ hr {
     font-size: 11px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .footer__image img {
         width: 30%;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
     .footer__image img {
-        width: 50%;
+        width: 62%;
     }
 
     .footer__inner {
-        padding: 66px 0 52px 0px;
+        padding: 52px 0 77px 0px;
+    }
+
+    .footer__image {
+        padding: 0px 0 22px 0px;
+    }
+
+    hr {
+        margin-bottom: 25px;
+    }
+
+    .footer__copyright {
+        width: 44%;
+        line-height: 14px;
     }
 }

@@ -30,6 +30,14 @@ module.exports = {
       filename: "pushkin.html",
       template: "./src/pushkin.html",
     }),
+    new HTMLWebpackPlugin({
+      filename: "hachapurnaya.html",
+      template: "./src/hachapurnaya.html",
+    }),
+    new HTMLWebpackPlugin({
+      filename: "samurai.html",
+      template: "./src/samurai.html",
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
