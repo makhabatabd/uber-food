@@ -1,5 +1,9 @@
 .main__section {
-    padding: 93px 0;
+    margin: 93px 0;
+
+    @media screen and (max-width: $grid-breakpoints-sm) {
+        margin: 53px 0;
+    }
 }
 
 .main__inner {
@@ -13,12 +17,22 @@
     border-radius: 2px;
     margin-bottom: 49px;
     max-width: 470px;
+
+    @media screen and (max-width: $grid-breakpoints-lg) {
+        max-width: 95%;
+    }
+
+    @media screen and (max-width: $grid-breakpoints-sm) {
+        max-width: 100%;
+    }
 }
 
-
-.main__part:hover {
-    background-color: #75757505;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@media screen and (any-hover: hover) {
+    .main__part:hover {
+        background-color: #75757505;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
 }
 
 .row {
@@ -29,28 +43,27 @@
 }
 
 
-.main__part--title {
+.main__title {
     line-height: 24px;
-    padding: 14px 0 4px 15px;
-    margin: 0;
-    font-weight: 400;
+    margin: 14px 0 4px 15px;
+    font-weight: $weight;
     font-size: 16px;
-    color: #1D1D1D;
+    display: block;
+    color: $color;
 }
 
-.main__part--text {
+.main__text {
     font-size: 13px;
     line-height: 21px;
     color: #626262;
-    padding: 0 0 56px 15px;
-    margin: 0;
+    margin: 0 0 56px 15px;
 }
 
-.main__part--span {
-    font-weight: 500;
+.main__span {
+    font-weight: $big-weight;
     display: inline-block;
     font-size: 15px;
     line-height: 21px;
-    padding: 0 0 15px 15px;
-    color: #1D1D1D;
+    margin: 0 0 15px 15px;
+    color: $color;
 }

@@ -27,7 +27,7 @@
     <main>
         <section class="information">
             <div class="information__extra">
-                <h2>
+                <h2 class="information__hacha--title">
                     Хачапурная №1
                 </h2>
                 <div class="information__extra--inner">
@@ -36,22 +36,22 @@
                 </div>
             </div>
         </section>
-        <section>
+        <div>
             <div class="menu">
                 <div class="container">
                     <div class="menu__options">
                         <div class="menu__option">
-                            <input name="checked" type="radio" checked id="check-1" />
+                            <input name="checked" value="Закуски" class="myRadio" type="radio" checked id="check-1" />
                             <label for="check-1">Закуски</label>
-                            <input name="checked" type="radio" id="check-2" />
+                            <input name="checked" value="Салаты" class="myRadio" type="radio" id="check-2" />
                             <label for="check-2">Салаты</label>
-                            <input name="checked" type="radio" id="check-3" />
+                            <input name="checked" value="Супы" class="myRadio" type="radio" id="check-3" />
                             <label for="check-3">Супы</label>
-                            <input name="checked" type="radio" id="check-4" />
+                            <input name="checked" value="Горячие блюда" class="myRadio" type="radio" id="check-4" />
                             <label for="check-4">Горячие блюда</label>
-                            <input name="checked" type="radio" id="check-5" />
+                            <input name="checked" value="Гарниры" class="myRadio" type="radio" id="check-5" />
                             <label for="check-5">Гарниры</label>
-                            <input name="checked" type="radio" id="check-6" />
+                            <input name="checked" value="Десерты" class="myRadio" type="radio" id="check-6" />
                             <label for="check-6">Десерты</label>
                         </div>
                     </div>
@@ -68,68 +68,68 @@
                 </div>
                 <hr class="menu__hr">
             </div>
-        </section>
+        </div>
         <section class="food">
             <div class="container">
-                <h2 class="food__title">Закуски</h2>
+                <h2 class="food__title" id="title">Закуски</h2>
                 <div class="row main justify-content-between">
-                    <div class="col-xxl-6 col-sm-12 main__part main__part--menu mx-auto mx-lg-0">
+                    <div class="col-xxl-6 col-sm-12 main__part main__menu mx-auto mx-lg-0">
                         <div>
-                            <h3 class="main__part--title food__part--title">Салат Имертинский особый</h3>
-                            <h5 class="main__part--text">С яйцом и огурцом</h5>
-                            <span class="main__part--span">240 ₽</span>
+                            <h3 class="main__title food__part--title">Салат Имертинский особый</h3>
+                            <h5 class="main__text food__part--title">С яйцом и огурцом</h5>
+                            <span class="main__span">240 ₽</span>
                         </div>
-                        <div class="food__part--img hacha-img">
+                        <div class="food__img internet__img">
                             <img src="./assets/media/hacha-1.png" alt="food-1">
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-sm-12 main__part main__part--menu mx-auto mx-lg-0">
+                    <div class="col-xxl-6 col-sm-12 main__part main__menu mx-auto mx-lg-0">
                         <div>
-                            <h3 class="main__part--title">Солянка</h3>
-                            <h5 class="main__part--text">С яйцом и огурцом</h5>
-                            <span class="main__part--span">320 ₽</span>
+                            <h3 class="main__title food__part--title">Солянка</h3>
+                            <h5 class="main__text food__part--title">С яйцом и огурцом</h5>
+                            <span class="main__span">320 ₽</span>
                         </div>
-                        <div class="food__part--img hacha-img">
+                        <div class="food__img internet__img">
                             <img src="./assets/media/hacha-2.jpeg" alt="food-2">
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-sm-12 main__part main__part--menu mx-auto mx-lg-0">
+                    <div class="col-xxl-6 col-sm-12 main__part main__menu mx-auto mx-lg-0">
                         <div>
-                            <h3 class="main__part--title">Хинкали с мясом</h3>
-                            <h5 class="main__part--text">С яйцом и огурцом</h5>
-                            <span class="main__part--span">300 ₽</span>
+                            <h3 class="main__title food__part--title">Хинкали с мясом</h3>
+                            <h5 class="main__text food__part--title">С яйцом и огурцом</h5>
+                            <span class="main__span">300 ₽</span>
                         </div>
-                        <div class="food__part--img hacha-img">
+                        <div class="food__img internet__img">
                             <img src="./assets/media/hacha-3.jpeg" alt="food-3">
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-sm-12 main__part main__part--menu mx-auto mx-lg-0">
+                    <div class="col-xxl-6 col-sm-12 main__part main__menu mx-auto mx-lg-0">
                         <div>
-                            <h3 class="main__part--title">Татариахни с горчицей</h3>
-                            <h5 class="main__part--text">С яйцом и огурцом</h5>
-                            <span class="main__part--span">320 ₽</span>
+                            <h3 class="main__title food__part--title">Татариахни с горчицей</h3>
+                            <h5 class="main__text food__part--title">С яйцом и огурцом</h5>
+                            <span class="main__span">320 ₽</span>
                         </div>
-                        <div class="food__part--img hacha-img">
+                        <div class="food__img internet__img">
                             <img src="./assets/media/hacha-4.jpeg" alt="food-4">
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-sm-12 main__part main__part--menu mx-auto mx-lg-0">
+                    <div class="col-xxl-6 col-sm-12 main__part main__menu mx-auto mx-lg-0">
                         <div>
-                            <h3 class="main__part--title">Оджахури из говядины</h3>
-                            <h5 class="main__part--text">С яйцом и огурцом</h5>
-                            <span class="main__part--span">350 ₽</span>
+                            <h3 class="main__title food__part--title">Оджахури из говядины</h3>
+                            <h5 class="main__text food__part--title">С яйцом и огурцом</h5>
+                            <span class="main__span">350 ₽</span>
                         </div>
-                        <div class="food__part--img hacha-img">
+                        <div class="food__img internet__img">
                             <img src="./assets/media/hacha-5.jpeg" alt="food-5">
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-sm-12 main__part main__part--menu mx-auto mx-lg-0">
+                    <div class="col-xxl-6 col-sm-12 main__part main__menu mx-auto mx-lg-0">
                         <div>
-                            <h3 class="main__part--title">Чахохбили</h3>
-                            <h5 class="main__part--text">С яйцом и огурцом</h5>
-                            <span class="main__part--span">350 ₽</span>
+                            <h3 class="main__title food__part--title">Чахохбили</h3>
+                            <h5 class="main__text food__part--title">С яйцом и огурцом</h5>
+                            <span class="main__span">350 ₽</span>
                         </div>
-                        <div class="food__part--img hacha-img">
+                        <div class="food__img internet__img">
                             <img src="./assets/media/hacha-6.jpeg" alt="food-6">
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                 <div class="footer__image">
                     <img src="./assets/media/logo.svg" alt="big logo">
                 </div>
-                <hr />
+                <hr class="footer__hr" />
                 <span class="footer__copyright">
                     © 2017 Uber Technologies Inc
                 </span>

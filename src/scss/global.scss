@@ -12,10 +12,10 @@
 
 a {
     text-decoration: none;
-    color: #1D1D1D;
+    color: $color;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $grid-breakpoints-xl) {
     .container {
         width: 95%;
     }

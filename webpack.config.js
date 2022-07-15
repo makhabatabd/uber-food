@@ -9,10 +9,10 @@ module.exports = {
   entry: ["@babel/polyfill", "./src/index.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index-bundle.js",
+    filename: "index.js",
   },
   resolve: {
-    extensions: [".js", ".json"],
+    extensions: [".js"],
   },
   devServer: {
     port: 3000,
@@ -43,7 +43,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "./src/assets"),
-          to: path.resolve(__dirname, "dist"),
+          to: path.resolve(__dirname, "dist/assets"),
         },
       ],
     }),
@@ -73,32 +73,9 @@ module.exports = {
           },
         },
       },
-      // {
-      //   test: /\.(scss)$/,
-      //   use: [
-      //     {
-      //       loader: "style-loader", // inject CSS to page
-      //     },
-      //     {
-      //       loader: "css-loader", // translates CSS into CommonJS modules
-      //     },
-      //     {
-      //       loader: "postcss-loader", // Run post css actions
-      //       options: {
-      //         plugins: function () {
-      //           // post css plugins, can be exported to postcss.config.js
-      //           return [require("precss"), require("autoprefixer")];
-      //         },
-      //       },
-      //     },
-      //     {
-      //       loader: "sass-loader", // compiles Sass to CSS
-      //     },
-      //   ],
-      // },
       {
-        test: /\.(ttf)$/,
-        use: ["file-loader"],
+        test: /\.(ttf)/,
+        type: "asset/resource",
       },
     ],
   },

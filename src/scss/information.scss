@@ -4,98 +4,101 @@
     background-image: url(../assets/media/Restaurant/main-pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-
-.information__extra {
-    background-color: white;
-    position: absolute;
-    max-width: 389px;
-    top: 22.6%;
-    left: 7%;
-}
-
-.information__extra--inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 1px 26px 38px 38px;
-    align-items: center;
-}
-
-.information__picture--img {
-    width: 100%;
-    height: 100%;
-}
-
-.information__extra h2 {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    padding: 38px 24px 53px 38px;
-    margin: 0;
-}
-
-.information__extra--inner p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    color: #626262;
-    margin: 0;
-}
-
-.information__extra--inner button {
-    background: #262626;
-    border-radius: 16px;
-    outline: none;
-    font-size: 13px;
-    border: 1px solid transparent;
-    color: white;
-    padding: 7px 18px;
-}
-
-
-@media screen and (max-width: 768px) {
-    .information {
-        background-image: url(../assets/media/Restaurant/small-main.jpg);
-        background-size: cover;
+    &__extra {
+        background-color: white;
+        position: absolute;
+        max-width: 389px;
+        top: 22.6%;
+        left: 7%;
     }
 
-    .information__extra--inner {
-        padding: 2px 33px 24px 38px;
+    &__extra--inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 1px 26px 38px 38px;
+        padding: 0;
+        align-items: center;
     }
 
-    .information__extra {
-        width: 308px;
-        top: 36%;
-        left: 2%;
-        box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    &__picture--img {
+        width: 100%;
+        height: 100%;
     }
 
-    .information__extra h2 {
-        font-size: 24px;
-        line-height: 28px;
-        padding: 24px 31px 39px 50px;
-        text-align: center;
+    &__extra h2 {
+        font-weight: $weight;
+        font-size: 36px;
+        line-height: 42px;
+        margin: 38px 24px 53px 38px;
+        padding: 0;
     }
 
-    .information__extra--inner {
-        flex-direction: column;
-        justify-content: center;
+    &__extra--inner p {
+        font-weight: $weight;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        color: #626262;
+        margin: 0;
     }
 
-    .information__extra--inner p {
-        margin-bottom: 16px;
+    &__extra--inner button {
+        background: #262626;
+        border-radius: 16px;
+        outline: none;
+        font-size: 13px;
+        border: 1px solid transparent;
+        color: white;
+        padding: 7px 18px;
+    }
+
+    &__extra &__hacha--title {
+        margin: 38px 86px 53px 38px;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $grid-breakpoints-md) {
+        &__extra--inner {
+            margin: 2px 33px 24px 38px;
+        }
+
+        &__extra {
+            top: 51%;
+            left: 6px;
+            right: 6px;
+            max-width: unset;
+            box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+        }
+
+        &__extra h2 {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 24px 38px 39px 50px;
+            text-align: center;
+        }
+
+        &__extra--inner {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__extra--inner p {
+            margin-bottom: 16px;
+        }
+
+        &__extra &__hacha--title {
+            margin: 24px 38px 39px 50px;
+        }
     }
 }
 
 
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: $grid-breakpoints-sm) {
     .information {
         height: 255px;
-    }
-
-    .information__extra {
-        top: 51%;
+        background-image: url(../assets/media/Restaurant/small-main.jpg);
+        background-size: cover;
     }
 }

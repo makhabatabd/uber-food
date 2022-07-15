@@ -1,17 +1,25 @@
 .menu {
-    padding: 31px 0 0px 0;
-}
+    margin: 31px 0 0px 0;
 
-.menu__hr {
-    border-bottom: 1px solid #757575;
-    width: 100%;
-    margin-bottom: 0px;
-    margin-top: 24px;
-}
+    &__hr {
+        border-bottom: 1px solid #757575;
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 24px;
+    }
 
-.menu__option {
-    display: flex;
-    flex-wrap: wrap;
+    &__option {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__option label {
+        margin-right: 40px;
+    }
+
+    &__option--small {
+        display: none;
+    }
 }
 
 input {
@@ -20,18 +28,15 @@ input {
     appearance: none;
 }
 
+label {
+    cursor: pointer;
+}
 
 input:checked+label {
-    color: green;
+    color: #327430;
+    cursor: pointer;
 }
 
-.menu__option label {
-    margin-right: 40px;
-}
-
-.menu__option--small {
-    display: none;
-}
 
 select {
     border: none;
@@ -49,34 +54,35 @@ select:focus {
     outline: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $grid-breakpoints-md) {
     .menu {
-        padding: 16px 0 0px 0;
+        margin: 16px 0 0px 0;
+
+        &__option {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__hr {
+            width: 16%;
+            margin: 10px auto 0;
+        }
+
+        &__option label {
+            margin-right: 0px;
+        }
+
+        &__option {
+            display: none;
+        }
+
+        &__option--small {
+            display: block;
+            display: flex;
+            justify-content: center;
+        }
     }
 
-    .menu__option {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu__hr {
-        width: 16%;
-        margin: 10px auto 0;
-    }
-
-    .menu__option label {
-        margin-right: 0px;
-    }
-
-    .menu__option {
-        display: none;
-    }
-
-    .menu__option--small {
-        display: block;
-        display: flex;
-        justify-content: center;
-    }
 
     textarea,
     input {
@@ -84,8 +90,8 @@ select:focus {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width:$grid-breakpoints-sm) {
     .menu {
-        padding: 114px 0 42px 0;
+        margin: 114px 0 41px 0;
     }
 }
