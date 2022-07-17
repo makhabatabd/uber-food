@@ -14,6 +14,7 @@ module.exports = {
   resolve: {
     extensions: [".js"],
   },
+  performance: { hints: false },
   devServer: {
     port: 3000,
     historyApiFallback: true,
@@ -24,19 +25,19 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       filename: "index.html",
-      template: "./src/index.html",
+      template: "./src/pages/index.html",
     }),
     new HTMLWebpackPlugin({
       filename: "pushkin.html",
-      template: "./src/pushkin.html",
+      template: "./src/pages/pushkin.html",
     }),
     new HTMLWebpackPlugin({
       filename: "hachapurnaya.html",
-      template: "./src/hachapurnaya.html",
+      template: "./src/pages/hachapurnaya.html",
     }),
     new HTMLWebpackPlugin({
       filename: "samurai.html",
-      template: "./src/samurai.html",
+      template: "./src/pages/samurai.html",
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
