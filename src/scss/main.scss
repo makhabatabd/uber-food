@@ -1,8 +1,8 @@
 .main__section {
-    margin: 93px 0;
+    margin: 93px 0 245px;
 
     @media screen and (max-width: $grid-breakpoints-sm) {
-        margin: 53px 0;
+        margin: 53px 0 150px;
     }
 }
 
@@ -18,22 +18,26 @@
     margin-bottom: 49px;
     max-width: 470px;
 
+    &:hover {
+        background-color: #75757505;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
     @media screen and (max-width: $grid-breakpoints-lg) {
         max-width: 95%;
     }
 
     @media screen and (max-width: $grid-breakpoints-sm) {
         max-width: 100%;
+
+        &:hover {
+            background-color: unset;
+            box-shadow: unset;
+        }
     }
 }
 
-@media screen and (any-hover: hover) {
-    .main__part:hover {
-        background-color: #75757505;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-    }
-}
 
 .row {
     padding: 0 0px;
@@ -61,7 +65,7 @@
 
 .main__span {
     font-weight: $big-weight;
-    display: inline-block;
+    display: block;
     font-size: 15px;
     line-height: 21px;
     margin: 0 0 15px 15px;
