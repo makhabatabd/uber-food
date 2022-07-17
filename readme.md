@@ -1,9 +1,9 @@
-# Goods-Shop
+# Uber-Food
 
 ## Run :
 
 ```.bash
-    git clone https://github.com/theoddorrrrr/goods-shop.git
+ git clone https://github.com/makhabatabd/uber-food.git
 
     npm install
 ```
